@@ -1,0 +1,37 @@
+{
+    "name": "cirelramos/aws-database-client",
+    "description": "package to search database client aws",
+    "type": "library",
+    "license": "MIT",
+    "keywords": [
+        "laravel",
+        "aws",
+        "database"
+    ],
+    "require": {
+        "php": "^7.4|^8.0",
+        "illuminate/database": "^7.20|^8.19|^9.0",
+        "illuminate/http": "^7.20|^8.19|^9.0",
+        "illuminate/contracts": "^7.20|^8.19|^9.0",
+        "illuminate/config": "^7.20|^8.19|^9.0",
+        "illuminate/database": "^7.20|^8.19|^9.0",
+        "aws/aws-sdk-php-laravel": "^3.6"
+    },
+    "autoload": {
+        "psr-4": {
+            "Cirelramos\\Database\\": "src/"
+        }
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0-dev"
+        }
+    },
+    "authors": [
+        {
+            "name": "Cirel Ramos",
+            "email": "cirelramos@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev"
+}
