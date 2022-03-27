@@ -42,7 +42,7 @@ add provider in config/app.php
 
 ```php
     'providers' => [
-        \CirelRamos\Database\DatabaseServiceProvider::class,
+        CirelRamos\Database\Providers\DatabaseServiceProvider::class,
    ]
 ```
 

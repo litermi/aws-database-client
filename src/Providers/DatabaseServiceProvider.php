@@ -2,7 +2,7 @@
 
 namespace Cirelramos\Database\Providers;
 
-use Cirelramos\Database\Extensions\DatabaseManager;
+use Cirelramos\Database\Extentions\DatabaseManager;
 use Illuminate\Database\Connectors\ConnectionFactory;
 use Illuminate\Database\DatabaseServiceProvider as BaseDatabaseServiceProvider;
 
