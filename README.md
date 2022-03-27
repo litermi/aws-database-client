@@ -27,7 +27,7 @@ set provider
 ```
 
 
-The defaults are set in `config/cache-query.php`. Publish the config to copy the file to your own config:
+The defaults are set in `config/aws-database-client.php`. Publish the config to copy the file to your own config:
 ```sh
 php artisan vendor:publish --provider="Cirelramos\Database\Providers\ServiceProvider"
 ```
