@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Extentions;
+namespace Cirelramos\Database\Extensions;
 
 use \Illuminate\Database\DatabaseManager as BaseDatabaseManager;
 use Illuminate\Support\Facades\Cache;

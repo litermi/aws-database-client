@@ -1,4 +1,4 @@
-# aws database client
+# Aws database client
 
 [![Software License][ico-license]](LICENSE.md)
 
@@ -38,37 +38,61 @@ php artisan vendor:publish --provider="Cirelramos\Database\Providers\ServiceProv
 
 ## Usage
 
-To cache for query you need use extend Class
+add provider in config/app.php
 
 ```php
-class Product extends CacheModel
-{
-}
+    'providers' => [
+        \CirelRamos\Database\DatabaseServiceProvider::class,
+   ]
 ```
 
-To cache for query you need use methods: getFromCache or firstCache
+change in config/database.php
 
 ```php
-        return Product::query()
-            ->where('active', ModelConst::ENABLED)
-            ->with($relations)
-            ->getFromCache(['*'], $tags);
-```
+    $mysqlConnection = env('TYPE_MYSQL_CONNECTION', null);
 
+    $mysql = [
+        'driver' => 'vault',
+    ];
 
-if you want purge cache can use methods: saveWithCache, insertWithCache, deleteWithCache
+    if ($mysqlConnection === 'local' || $mysqlConnection === null) {
+        $mysql = [
+            'driver' => 'mysql',
+            'host' => env('DB_HOST', '127.0.0.1'),
+            'port' => env('DB_PORT', '3306'),
+            'database' => env('DB_DATABASE', 'apitrillo'),
+            'username' => env('DB_USERNAME', 'root'),
+            'password' => env('DB_PASSWORD', 'root'),
+            'unix_socket' => env('DB_SOCKET', ''),
+            'charset' => env('DB_CHARSET_MYSQL', 'utf8mb4'),
+            'collation' => env('DB_COLLECTION_MYSQL' , 'utf8mb4_unicode_ci'),
+            'prefix' => '',
+            'modes' => [
+                'NO_UNSIGNED_SUBTRACTION',
+                'NO_ENGINE_SUBSTITUTION',
+            ],
+            'engine' => null,
+        ];
+    }
 
-```php
-            $product = new Product();
-            $product->saveWithCache();
-```
+$database = [
 
-```php
-            Product::insertWithCache($values);
-```
+    //    .
+    //    .
 
-```php
-            $product->deleteWithCache();
+    'connections' => [
+
+        //        .
+        //        .
+
+        'mysql' => $mysql,
+        
+        //        .
+        //        .
+     ]
+]
+
+return $database;
 ```
 
 

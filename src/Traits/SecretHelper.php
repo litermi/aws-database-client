@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Core\Base\Traits;
+namespace Cirelramos\Database\Traits;
 use Aws\Exception\AwsException;
 use Aws\SecretsManager\SecretsManagerClient;
 use Illuminate\Support\Facades\Cache;
