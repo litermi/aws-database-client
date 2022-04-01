@@ -17,17 +17,16 @@ class ServiceProvider extends \Illuminate\Support\ServiceProvider
         $this->publishConfig();
         $this->publishMigrations();
     }
-
+    
     private function mergeConfig()
     {
-        $path = $this->getConfigPath();
-        $this->mergeConfigFrom($path, 'bar');
+        $this->mergeConfigFrom($this->getConfigPath(), 'database');
     }
-
+    
     private function publishConfig()
     {
-        $path = $this->getConfigPath();
-        $this->publishes([$path => config_path('aws-database-client.php')], 'config');
+        // Publish a config file
+        $this->publishes([ $this->getConfigPath() => config_path('aws-database-client.php'), ], 'config');
     }
 
     private function publishMigrations()
