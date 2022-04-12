@@ -1,8 +1,8 @@
 <?php
 
-namespace Cirelramos\Database\Providers;
+namespace Litermi\Database\Providers;
 
-use Cirelramos\Database\Extentions\DatabaseManager;
+use Litermi\Database\Extentions\DatabaseManager;
 use Illuminate\Database\Connectors\ConnectionFactory;
 use Illuminate\Database\DatabaseServiceProvider as BaseDatabaseServiceProvider;
 

@@ -1,6 +1,6 @@
 <?php
 
-namespace Cirelramos\Database\Extentions;
+namespace Litermi\Database\Extentions;
 
 use \Illuminate\Database\DatabaseManager as BaseDatabaseManager;
 use Illuminate\Support\Facades\Cache;

@@ -11,9 +11,9 @@ The `aws database client` package to search database client aws .
 ## Installation
 
 
-Require the `cirelramos/aws-database-client` package in your `composer.json` and update your dependencies:
+Require the `litermi/aws-database-client` package in your `composer.json` and update your dependencies:
 ```sh
-composer require cirelramos/aws-database-client
+composer require litermi/aws-database-client
 ```
 
 
@@ -24,14 +24,14 @@ set provider
 ```php
 'providers' => [
     // ...
-    Cirelramos\Database\Providers\ServiceProvider::class,
+    Litermi\Database\Providers\ServiceProvider::class,
 ],
 ```
 
 
 The defaults are set in `config/aws-database-client.php`. Publish the config to copy the file to your own config:
 ```sh
-php artisan vendor:publish --provider="Cirelramos\Database\Providers\ServiceProvider"
+php artisan vendor:publish --provider="Litermi\Database\Providers\ServiceProvider"
 ```
 
 > **Note:** this is necessary to yo can change default config

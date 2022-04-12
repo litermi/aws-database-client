@@ -1,6 +1,6 @@
 <?php
 
-namespace Cirelramos\Database\Providers;
+namespace Litermi\Database\Providers;
 
 /**
  *
@@ -17,12 +17,12 @@ class ServiceProvider extends \Illuminate\Support\ServiceProvider
         $this->publishConfig();
         $this->publishMigrations();
     }
-    
+
     private function mergeConfig()
     {
         $this->mergeConfigFrom($this->getConfigPath(), 'database');
     }
-    
+
     private function publishConfig()
     {
         // Publish a config file

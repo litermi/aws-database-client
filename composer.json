@@ -1,5 +1,5 @@
 {
-    "name": "cirelramos/aws-database-client",
+    "name": "litermi/aws-database-client",
     "description": "package to search database client aws",
     "type": "library",
     "license": "MIT",
@@ -19,7 +19,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Cirelramos\\Database\\": "src/"
+            "Litermi\\Database\\": "src/"
         }
     },
     "extra": {
