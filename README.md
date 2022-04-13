@@ -34,7 +34,7 @@ The defaults are set in `config/aws-database-client.php`. Publish the config to 
 php artisan vendor:publish --provider="Litermi\Database\Providers\ServiceProvider"
 ```
 
-> **Note:** this is necessary to yo can change default config
+> **Note:** this is necessary to you can change default config
 
 
 
