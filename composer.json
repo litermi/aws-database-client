@@ -14,7 +14,6 @@
         "illuminate/http": "^7.20|^8.19|^9.0",
         "illuminate/contracts": "^7.20|^8.19|^9.0",
         "illuminate/config": "^7.20|^8.19|^9.0",
-        "illuminate/database": "^7.20|^8.19|^9.0",
         "aws/aws-sdk-php-laravel": "^3.6"
     },
     "autoload": {
@@ -28,7 +27,7 @@
         },
         "laravel": {
             "providers": [
-                "Database\\Providers\\ServiceProvider"
+                "Litermi\\Database\\Providers\\ServiceProvider"
             ]
         }
     },
