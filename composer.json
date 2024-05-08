@@ -10,10 +10,10 @@
     ],
     "require": {
         "php": "^7.4|^8.0",
-        "illuminate/database": "^7.20|^8.19|^9.0|^10.0",
-        "illuminate/http": "^7.20|^8.19|^9.0|^10.0",
-        "illuminate/contracts": "^7.20|^8.19|^9.0|^10.0",
-        "illuminate/config": "^7.20|^8.19|^9.0|^10.0",
+        "illuminate/database": "^7.20|^8.19|^9.0|^10.0|^11.0",
+        "illuminate/http": "^7.20|^8.19|^9.0|^10.0|^11.0",
+        "illuminate/contracts": "^7.20|^8.19|^9.0|^10.0|^11.0",
+        "illuminate/config": "^7.20|^8.19|^9.0|^10.0|^11.0",
         "aws/aws-sdk-php-laravel": "^3.6"
     },
     "autoload": {
